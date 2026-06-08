@@ -138,9 +138,6 @@ export function Login() {
               👨‍🏫 Преподаватель
             </button>
           </div>
-          <p style={{ color: '#555', fontSize: '10px', marginTop: '10px' }}>
-            Админ: admin / admin123
-          </p>
         </div>
 
         <footer style={{ marginTop: '40px', color: '#7D7D7D', fontSize: '12px' }}>
