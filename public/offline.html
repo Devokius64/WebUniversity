@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Нет соединения</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #2B2B2B;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      text-align: center;
+      max-width: 300px;
+    }
+    h1 {
+      color: #2E69FF;
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    p {
+      color: #aaa;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+    button {
+      background-color: #2E69FF;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1e4fcc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📡 Нет соединения</h1>
+    <p>Пожалуйста, проверьте интернет-соединение и попробуйте снова</p>
+    <button onclick="location.reload()">Обновить страницу</button>
+  </div>
+</body>
+</html>

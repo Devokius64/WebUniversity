@@ -1,0 +1,137 @@
+:root {
+    --bgcolor: #2B2B2B;
+    --text-color-1: #FFFFFF;
+    --block-bgcolor: #2E69FF;
+    --block-bordercolor: #1847C1;
+}
+body {
+    background-color: var(--bgcolor);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+  
+    min-height: 100vh;
+}
+
+.main {
+    display: grid;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+.small-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    width: 288px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 4px solid var(--block-bordercolor);
+    background: var(--block-bgcolor);
+    box-shadow: 0px 4px 4px 0px rgba(24, 71, 193, 0.25);
+    color: var(--text-color-1)
+}
+
+.large-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    width: 288px;
+    height: 124px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 4px solid var(--block-bordercolor);
+    background: var(--block-bgcolor);
+    box-shadow: 0px -4px 4px 0px rgba(24, 71, 193, 0.25), 0px 4px 4px 0px rgba(24, 71, 193, 0.25), -4px 0px 4px 0px rgba(24, 71, 193, 0.25), 4px 0px 4px 0px rgba(24, 71, 193, 0.25);
+    color: var(--text-color-1);
+
+}
+
+.profileP {
+    color:#FFFFFF;
+    font-size: 16px;
+}
+
+@media (min-width: 150px) and (max-width: 400px) {
+  .profileP {
+    font-size: 12px;
+  }
+}
+
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+}
+
+.text-container, p {
+    /* padding-left: 3vw; */
+}
+
+.paragraph {
+    color: var(--text-color-1)
+}
+
+.personal-card-container {
+    color: var(--block-bgcolor)
+
+}
+.text-card-container {
+    display: flex;
+    flex-direction: column;
+    top: -10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.image-card-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-card-border {
+    width: 100px;
+    height: 100px;
+    border-radius:  100%;
+    outline-width: 2px;
+    outline-color: var(--block-bordercolor);
+}
+
+
+/* Скрываем нативные скроллбары во всех браузерах */
+.calendar.style-scroll {
+  overflow-x: auto;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #555 #2B2B2B; /* Firefox */
+}
+
+/* WebKit (Chrome, Edge, Safari) */
+.calendar.style-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.calendar.style-scroll::-webkit-scrollbar-track {
+  background: #2B2B2B;
+  border-radius: 4px;
+}
+
+.calendar.style-scroll::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.calendar.style-scroll::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
